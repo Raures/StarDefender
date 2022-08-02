@@ -1,5 +1,6 @@
 import pygame
 
+# Import the default text font
 from settings import FONT
 
 
@@ -238,15 +239,20 @@ class Label:
 	surface : pygame.display.set_mode()
 		The surface object created by pygame
 	"""
-
+	
+	# Create the surface of the text and get its rectangle to be displayed on the surface
         text_surface = pygame.font.Font(self.text_font, self.text_size).render(self.text, True, self.text_color)
         text_rectangle = text_surface.get_rect(center=(self.x, self.y))
 
         if self.background:
+	    # Draw a background rectangle of color background_color and inflate it on the x and y direction by text_padding value
             pygame.draw.rect(surface, self.background_color, text_rectangle.inflate(self.text_padding, self.text_padding))
 
         if self.border:
+	    # Draw a border of color border_color and inflate it on the x and y direction by text_padding value
+	    # and give it a thickness of border_thickness
             pygame.draw.rect(surface, self.border_color,
                              text_rectangle.inflate(self.text_padding, self.text_padding), self.border_thickness)
-
+	
+	# Display the text of the label
         surface.blit(text_surface, text_rectangle)

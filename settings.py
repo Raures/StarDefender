@@ -30,3 +30,29 @@ last_queen = 0
 beetle_frequency = 2
 wasp_frequency = 4
 queen_frequency = 20
+
+# Sounds
+# Hitting an enemy (Tribal dry drum): 
+# https://mixkit.co/free-sound-effects/tap/
+
+# Destroying an enemy (Long pop):
+# https://mixkit.co/free-sound-effects/pop/
+
+# Destroying self (Retro arcade game over):
+# https://mixkit.co/free-sound-effects/lose/
+
+# Losing a life (Explainer video pops whoosh light pop):
+# https://mixkit.co/free-sound-effects/pop/
+
+# Firing (Beam 8):
+# https://pixabay.com/sound-effects/search/laser/
+
+# Background music (Land of 8 Bits):
+# https://www.fesliyanstudios.com/royalty-free-music/downloads-c/8-bit-music/6
+
+# Button hover (Button hover):
+# https://freesound.org/people/Fachii/sounds/338229/
+
+# Button clicked (UI button click 4/Typewriter soft click):
+# https://www.zapsplat.com/sound-effect-category/button-clicks/
+# https://mixkit.co/free-sound-effects/click/

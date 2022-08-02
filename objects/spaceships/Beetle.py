@@ -11,6 +11,9 @@ class Beetle(pygame.sprite.Sprite):
         pygame.transform.scale(pygame.image.load(r"imgs\Beetle.png").convert_alpha(), (35, 25), self.image)
         self.rect = self.image.get_rect(center=(pos_x, pos_y))
 
+        self.damage_sound = pygame.mixer.Sound(settings.lose_hp_sound)
+        self.destroyed_sound = pygame.mixer.Sound(settings.enemy_destroyed_sound)
+
         self.center = None
 
         self.index = 0
@@ -43,8 +46,13 @@ class Beetle(pygame.sprite.Sprite):
             else:
                 self.image = self.explosion_sprites[int(self.index)]
                 self.rect = self.image.get_rect(center=self.center)
+
+                if self.index == 0:
+                    self.destroyed_sound.play()
+
                 self.index += 0.2
 
         if self.rect.y > pygame.display.get_surface().get_height():
             settings.player_health_points -= 1
+            self.damage_sound.play()
             self.kill()

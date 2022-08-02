@@ -17,9 +17,6 @@ class Button:
         self.width = width
         self.height = height
 
-        self.text_surface = None
-        self.text_rectangle = None
-
         self.background_color = (0, 255, 255)
         self.background_surface = None
         self.background_rectangle = None
@@ -86,8 +83,8 @@ class Button:
 
     def show(self, surface):
 
-        self.text_surface = pygame.font.Font(self.text_font, self.text_size).render(self.text, True, self.text_color)
-        self.text_rectangle = self.text_surface.get_rect(center=(self.x, self.y))
+        text_surface = pygame.font.Font(self.text_font, self.text_size).render(self.text, True, self.text_color)
+        text_rectangle = text_surface.get_rect(center=(self.x, self.y))
 
         self.background_surface = pygame.Surface((self.width, self.height))
         self.background_surface.fill(self.background_color)
@@ -100,4 +97,4 @@ class Button:
         if self.hover():
             pygame.draw.rect(surface, self.border_color, pygame.Rect(pygame.Surface((self.width, self.height)).get_rect(center=(self.x, self.y))),  self.border_thickness)
 
-        surface.blit(self.text_surface, self.text_rectangle)
+        surface.blit(text_surface, text_rectangle)

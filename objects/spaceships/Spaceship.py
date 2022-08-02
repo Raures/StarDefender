@@ -15,6 +15,12 @@ class Spaceship(pygame.sprite.Sprite):
         pygame.transform.scale(pygame.image.load(r"imgs\Defender.png").convert_alpha(), (45, 45), self.image)
         self.rect = self.image.get_rect(center=(self.x, self.y))
 
+        self.fire_sound = pygame.mixer.Sound(settings.fire_sound)
+        self.fire_sound.set_volume(0.1)
+
+        self.destroyed_sound = pygame.mixer.Sound(settings.game_lost_sound)
+        self.destroyed_sound.set_volume(1)
+
         self.index = 0
         self.explosion_sprites = []
         self.explosion_sprites.append(pygame.image.load(r"imgs\Explosion1_1.png"))
@@ -33,6 +39,7 @@ class Spaceship(pygame.sprite.Sprite):
 
     def fire(self):
         self.fired = True
+        self.fire_sound.play()
         settings.bullet_sprite_group.add(Bullet(self.rect.centerx, self.rect.centery))
 
     def update(self, screen):
@@ -49,6 +56,8 @@ class Spaceship(pygame.sprite.Sprite):
             else:
                 self.image = self.explosion_sprites[int(self.index)]
                 self.rect = self.image.get_rect(center=self.rect.center)
+                if self.index == 0:
+                    self.destroyed_sound.play()
                 self.index += 0.2
         else:
             self.rect.centerx = mouse[0]

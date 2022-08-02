@@ -5,9 +5,6 @@ from objects.ui.Label import Label
 from objects.ui.Button import Button
 
 from objects.spaceships.Spaceship import Spaceship
-from objects.spaceships.Beetle import Beetle
-from objects.spaceships.Wasp import Wasp
-from objects.spaceships.Queen import Queen
 
 import settings
 from settings import *
@@ -54,39 +51,34 @@ def draw_health():
 
 def spawner():
     global game_time
+    global enemies
+
+    scene_distance = -50
 
     time_now = time.time()
 
-    if time_now - game_time > first_beetle:
-        if settings.last_beetle == 0:
-            enemy_sprite_group.add(Beetle(random_x_pos(), -25))
-            settings.last_beetle = time_now
-        elif time_now - settings.last_beetle > beetle_frequency:
-            enemy_sprite_group.add(Beetle(random_x_pos(), -25))
-            settings.last_beetle = time_now
-
-    if time_now - game_time > first_wasp:
-        if settings.last_wasp == 0:
-            enemy_sprite_group.add(Wasp(random_x_pos(), -25))
-            settings.last_wasp = time_now
-        elif time_now - settings.last_wasp > wasp_frequency:
-            enemy_sprite_group.add(Wasp(random_x_pos(), -25))
-            settings.last_wasp = time_now
-
-    if time_now - game_time > first_queen:
-        if settings.last_queen == 0:
-            enemy_sprite_group.add(Queen(random_x_pos(), -200))
-            settings.last_queen = time_now
-        elif time_now - settings.last_queen > queen_frequency:
-            enemy_sprite_group.add(Queen(random_x_pos(), -200))
-            settings.last_queen = time_now
+    for c in range(len(enemies["enemy"])):
+        if time_now - game_time > enemies["first_spawn"][c]:
+            if enemies["last_spawned"][c] == 0:
+                enemy_sprite_group.add(enemies["enemy"][c](random_x_pos(), scene_distance))
+                enemies["last_spawned"][c] = time_now
+            elif time_now - enemies["last_spawned"][c] > enemies["frequency"][c]:
+                enemy_sprite_group.add(enemies["enemy"][c](random_x_pos(), scene_distance))
+                enemies["last_spawned"][c] = time_now
 
 
 pygame.init()
 
 screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 pygame.display.set_caption(SCREEN_TITLE)
+
 game_time = time.time()
+
+enemies = enemy_behavior
+
+sound = pygame.mixer.Sound(settings.background_music)
+sound.set_volume(0.05)
+sound.play(-1)
 
 clock = pygame.time.Clock()
 

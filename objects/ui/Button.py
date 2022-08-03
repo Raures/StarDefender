@@ -5,39 +5,39 @@ from settings import FONT
 
 
 class Button:
-	"""
-	Create a Button object.
+    """
+    Create a Button object.
 
-	Attributes
-	----------
-	text : str
-		Text of the button
-	text_size : int
-		Size of the text
-	text_font : str
-		Font of the text
-	text_color : tuple
-		RGB value of text color
-	x : int
-		Position by x coordinate
-	y : int
-		Position by y coordinate
-	width : int
-		Width of the button
-	height : int
-		Height of the button
-	text_surface : 
+    Attributes
+    ----------
+    text : str
+        Text of the button
+    text_size : int
+        Size of the text
+    text_font : str
+        Font of the text
+    text_color : tuple
+        RGB value of text color
+    x : int
+        Position by x coordinate
+    y : int
+        Position by y coordinate
+    width : int
+        Width of the button
+    height : int
+        Height of the button
 
-	Methods
-	-------
-	"""
+    Methods
+    -------
+    """
+
     def __init__(self, text, pos_x, pos_y, width, height):
-	"""
-	Parameters
-	----------
-	text : str
-		Text of the button
-	"""
+        """
+        Parameters
+        ----------
+        text : str
+            Text of the button
+        """
 
         self.text = text
         self.text_size = 15
@@ -63,14 +63,14 @@ class Button:
         self.click_reaction = None
 
     def set_text(self, new_text):
-	"""
-	Set the new text of the button.
-		
-	Parameters
-	----------
-	new_text : str
-		New text of the button
-	"""
+        """
+        Set the new text of the button.
+
+        Parameters
+        ----------
+        new_text : str
+            New text of the button
+        """
         self.text = new_text
 
     def set_text_size(self, new_size):

@@ -110,7 +110,7 @@ game_time = time.time()
 
 enemies = enemy_behavior
 
-sound = pygame.mixer.Sound(settings.background_music)
+sound = pygame.mixer.Sound(settings.SOUNDS["background"])
 sound.set_volume(0.05)
 sound.play(-1)
 

@@ -50,39 +50,6 @@ def draw_health():
 
 
 def spawner():
-    """
-    from collections import OrderedDict
-    import time
-
-    enemies = OrderedDict()
-
-    enemies["enemy"] = ["Beetle", "Wasp", "Queen"]
-    enemies["first_spawn"] = [2, 5, 15]
-    enemies["last_spawned"] = [0, 0, 0]
-    enemies["frequency"] = [2, 4, 20]
-
-    global_time = time.time()
-
-    def spawn():
-        global global_time
-        global enemies
-    
-        time_now = time.time()
-    
-        for c in range(len(enemies["enemy"])):
-            if time_now - global_time > enemies["first_spawn"][c]:
-                if enemies["last_spawned"][c] == 0:
-                    print("First {}!".format(enemies["enemy"][c]))
-                    enemies["last_spawned"][c] = time_now
-                elif time_now - enemies["last_spawned"][c] > enemies["frequency"][c]:
-                    print("Spawning {}!".format(enemies["enemy"][c]))
-                    enemies["last_spawned"][c] = time_now
-
-    while time.time() - global_time < 30:
-        spawn()
-        time.sleep(1)
-        print(time.time() - global_time)
-    """
     
     global game_time
     global enemies

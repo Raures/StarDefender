@@ -14,12 +14,15 @@ FRAME_RATE = 60
 FONT = r"fonts\PressStart2P.ttf"
 
 # Sound settings
-hit_sound = r"sounds\hit.wav"
-fire_sound = r"sounds\fire.wav"
-game_lost_sound = r"sounds\game_lost.wav"
-lose_hp_sound = r"sounds\lose_hp.wav"
-enemy_destroyed_sound = r"sounds\enemy_destroyed.wav"
-background_music = r"sounds\land_of_8_bits.mp3"
+SOUNDS_FOLDER_PATH = "sounds"
+SOUND = {
+  "hit": fr"{SOUNDS_PATH}\hit.wav",
+  "fire": fr"{SOUNDS_PATH}\fire.wav",
+  "game_lost": fr"{SOUNDS_PATH}\game_lost.wav",
+  "lose_hp": fr"{SOUNDS_PATH}\lose_hp.wav",
+  "enemy_destroyed": fr"{SOUNDS_PATH}\enemy_destroyed.wav",
+  "background": fr"{SOUNDS_PATH}\land_of_8_bits.mp3"
+}
 
 # Player settings
 player_sprite_group = pygame.sprite.GroupSingle()

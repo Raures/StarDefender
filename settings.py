@@ -15,7 +15,7 @@ FONT = r"fonts\PressStart2P.ttf"
 
 # Sound settings
 SOUNDS_FOLDER_PATH = "sounds"
-SOUND = {
+SOUNDS = {
   "hit": fr"{SOUNDS_PATH}\hit.wav",
   "fire": fr"{SOUNDS_PATH}\fire.wav",
   "game_lost": fr"{SOUNDS_PATH}\game_lost.wav",

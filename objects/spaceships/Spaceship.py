@@ -15,10 +15,10 @@ class Spaceship(pygame.sprite.Sprite):
         pygame.transform.scale(pygame.image.load(r"imgs\Defender.png").convert_alpha(), (45, 45), self.image)
         self.rect = self.image.get_rect(center=(self.x, self.y))
 
-        self.fire_sound = pygame.mixer.Sound(settings.fire_sound)
+        self.fire_sound = pygame.mixer.Sound(settings.SOUNDS["fire"])
         self.fire_sound.set_volume(0.1)
 
-        self.destroyed_sound = pygame.mixer.Sound(settings.game_lost_sound)
+        self.destroyed_sound = pygame.mixer.Sound(settings.SOUNDS["game_lost"])
         self.destroyed_sound.set_volume(1)
 
         self.index = 0

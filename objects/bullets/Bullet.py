@@ -11,7 +11,7 @@ class Bullet(pygame.sprite.Sprite):
         pygame.transform.scale(pygame.image.load(r"imgs\BasicAttackBullet.png").convert_alpha(), (6, 31), self.image)
         self.rect = self.image.get_rect(center=(pos_x, pos_y))
 
-        self.sound = pygame.mixer.Sound(settings.hit_sound)
+        self.sound = pygame.mixer.Sound(settings.SOUNDS["hit")
         self.sound.set_volume(0.4)
 
     def update(self):

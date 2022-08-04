@@ -186,7 +186,7 @@ class Button:
         if new_height:
             self.height = new_height
 
-    def set_background_color(self, new_color: int) -> None:
+    def set_background_color(self, new_color: tuple) -> None:
         """
         Set the color of the background.
 

@@ -125,7 +125,7 @@ class UFO(pygame.sprite.Sprite):
             # Forbid the object to leave the screen
             if self.rect.x + self.rect.width > settings.SCREEN_WIDTH:
                 self.rect.x = settings.SCREEN_WIDTH - self.rect.width - 10
-            elif self.rect.x - 5:
+            elif self.rect.x - 5 < 0:
                 self.rect.x = 10
 
     def explode(self) -> None:

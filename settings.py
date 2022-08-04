@@ -10,7 +10,6 @@ from objects.spaceships.Queen import Queen
 SCREEN_TITLE = "Space Killing Spree"
 SCREEN_WIDTH = 800
 SCREEN_HEIGHT = 600
-SCREEN = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 SCREEN_BACKGROUND = (0, 0, 0)
 FRAME_RATE = 60
 FONT = r"fonts\PressStart2P.ttf"

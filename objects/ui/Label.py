@@ -7,6 +7,7 @@ from settings import FONT
 class Label:
     """
     Create a Label object.
+
     Attributes
     ----------
     text : str
@@ -103,6 +104,7 @@ class Label:
     def set_text(self, new_text: str) -> None:
         """
         Set the new text displayed on the label.
+
         Parameters
         ----------
         new_text : str
@@ -113,6 +115,7 @@ class Label:
     def set_font(self, new_font_type: str) -> None:
         """
         Set a new font for the text displayed on the label.
+
         Parameters
         ----------
         new_font_type : str
@@ -146,6 +149,7 @@ class Label:
         """
         Set the padding value of the text.
         It represents the distance between the text and the margin of the label rectangle.
+
         Parameters
         ----------
         new_padding : int
@@ -156,6 +160,7 @@ class Label:
     def set_position(self, new_x: int or None, new_y: int or None) -> None:
         """
         Set a new position for the label.
+
         Parameters
         ----------
         new_x : int, None
@@ -171,6 +176,7 @@ class Label:
     def set_background(self, new_bool: bool) -> None:
         """
         Set the visibility of the label background.
+
         Parameters
         ----------
         new_bool : bool
@@ -181,6 +187,7 @@ class Label:
     def set_background_color(self, new_color: tuple) -> None:
         """
         Set the label background color.
+
         Parameters
         ----------
         new_color : tuple
@@ -191,6 +198,7 @@ class Label:
     def set_border(self, new_bool: bool) -> None:
         """
         Set the visibility of the label border.
+
         Parameters
         ----------
         new_bool : bool
@@ -211,7 +219,8 @@ class Label:
 
     def set_border_thickness(self, new_thickness: int) -> None:
         """
-        Set the thickness of the label border
+        Set the thickness of the label border.
+
         Parameters
         ----------
         new_thickness : int
@@ -222,6 +231,7 @@ class Label:
     def show(self, surface) -> None:
         """
         Display the label on the surface.
+
         Parameters
         ----------
         surface : pygame.display.set_mode()

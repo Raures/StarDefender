@@ -104,7 +104,7 @@ button_retry.connect(retry)
 label_score = Label("", 60, SCREEN_HEIGHT - 15, 12)
 label_score.set_text_color((255, 0, 0))
 
-background_image = pygame.image.load(r"imgs\space_background.png").convert_alpha()
+background_image = pygame.image.load(r"imgs\space_background.png").convert()
 
 paused = False
 running = True

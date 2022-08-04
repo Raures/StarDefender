@@ -40,11 +40,11 @@ class Label:
     set_text(new_text)
         Set the new text displayed on the label
     set_font(new_font)
-        Set a new font for the text
+        Set the font for the text
     set_text_color(new_color)
-        Set a new color for the text
+        Set the color of the text
     set_text_size(new_size)
-        Set a new size for the text
+        Set the size of the text
     set_text_padding(new_padding)
         Set the padding of the text
     set_position(new_x, new_y)
@@ -72,9 +72,9 @@ class Label:
         Parameters
         ----------
         pos_x : int
-            The x coordinate of the label position
+            The position of the label on the x-axis
         pos_y : int
-            The y coordinate of the label position
+            The position of the label on the y-axis
         size : int
             The size of the text displayed on the label
             Default: 20
@@ -103,7 +103,7 @@ class Label:
 
     def set_text(self, new_text: str) -> None:
         """
-        Set the new text displayed on the label.
+        Set the text of the label.
 
         Parameters
         ----------
@@ -114,18 +114,18 @@ class Label:
 
     def set_font(self, new_font_type: str) -> None:
         """
-        Set a new font for the text displayed on the label.
+        Set the font of the text.
 
         Parameters
         ----------
         new_font_type : str
-            New font of the text
+            Path to a *.ttf file
         """
         self.text_font = new_font_type
 
     def set_text_color(self, new_color: tuple) -> None:
         """
-        Set a new color for the text displayed on the label.
+        Set the color of the text.
 
         Parameters
         ----------
@@ -136,7 +136,7 @@ class Label:
 
     def set_text_size(self, new_size: int) -> None:
         """
-        Set a new size for the text displayed on the label.
+        Set the size of the text.
 
         Parameters
         ----------
@@ -147,7 +147,7 @@ class Label:
 
     def set_text_padding(self, new_padding: int) -> None:
         """
-        Set the padding value of the text.
+        Set the padding around the text.
         It represents the distance between the text and the margin of the label rectangle.
 
         Parameters
@@ -159,13 +159,13 @@ class Label:
 
     def set_position(self, new_x: int or None, new_y: int or None) -> None:
         """
-        Set a new position for the label.
+        Set the position of the label.
 
         Parameters
         ----------
-        new_x : int, None
+        new_x : int or None
             New x coordinate for the label position, None leaves the value unchanged
-        new_y : int, None
+        new_y : int or None
             New y coordinate for the label position, None leaves the value unchanged
         """
         if new_x:
@@ -180,7 +180,7 @@ class Label:
         Parameters
         ----------
         new_bool : bool
-            True or False
+            True/False, reveal or hide the background
         """
         self.background = new_bool
 

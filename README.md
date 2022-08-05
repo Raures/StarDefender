@@ -5,7 +5,7 @@ Libraries used to create this program.<br>
 * <a href="https://www.pygame.org/download.shtml">pygame</a>
 ## :clipboard: Getting Started
 ### :one: Installing the game
-Using <a href="https://git-scm.com/downloads">Git</a>, run the following command to fork the project
+Using <a href="https://git-scm.com/downloads">Git</a>, run the following command to clone the project
 ```sh
 git clone https://github.com/Raures/StarDefender.git
 ```

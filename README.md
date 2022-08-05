@@ -1,8 +1,12 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![alt-text](https://img.shields.io/badge/module-pygame-blue)](https://www.pygame.org/download.shtml)
+[![alt-text](https://img.shields.io/badge/module-poetry-blue)](https://pypi.org/project/poetry/)
+![alt-text](https://img.shields.io/badge/platform-win--32%20%7C%20win--64-lightgrey)
 # <p align="center">:rocket: Star Defender</p>
 ### :hammer: Built With
 Libraries used to create this program.<br>
 * <a href="https://www.pygame.org/download.shtml">pygame</a>
+* <a href="https://pypi.org/project/poetry/">poetry</a>
 ## :clipboard: Getting Started
 ### :one: Installing the game
 Using <a href="https://git-scm.com/downloads">Git</a>, run the following command to clone the project

@@ -1,4 +1,5 @@
-# :rocket: Star Defender<br><br>
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+# <p align="center">:rocket: Star Defender</p>
 ### :hammer: Built With
 Libraries used to create this program.<br>
 * <a href="https://www.pygame.org/download.shtml">pygame</a>
@@ -28,15 +29,15 @@ The amount of health points left are displayed in the bottom right side of the s
 The score is displayed in the bottom left side of the screen.
 The ammo is unlimited and there's no reload time.
 #### :arrow_forward: Enemy Types
-* **Beetle**.<br>
+1. **Beetle**.<br>
 Regular enemy. Has one health point and doesn't do anything special. Spawns frequently.<br>
 If this enemy gets past you, you lose 1 health point.<br>
 <img src="https://github.com/Raures/StarDefender/blob/master/imgs/Beetle.png" width="35" height="25"/><br>
-* **Wasp**.
+2. **Wasp**.
 This enemy is wider and can randomly change its position. Has three health points. Spawns less frequently.<br>
 If this enemy gets past you, you lose 1 health point.<br>
 <img src="https://github.com/Raures/StarDefender/blob/master/imgs/Wasp.png" width="85" height="25"/><br>
-* **Queen**.
+3. **Queen**.
 This is a large enemy, has a bigger hitbox, doesn't have any special ability but has 20 health points. Spawns the least frequent.<br>
 If this enemy gets past you, you lose 1 health point.<br>
 <img src="https://github.com/Raures/StarDefender/blob/master/imgs/Queen.png" width="310" height="175"/><br>

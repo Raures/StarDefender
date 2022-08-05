@@ -37,7 +37,7 @@ If this enemy gets past you, you lose 1 health point.
 This is a large enemy, has a bigger hitbox, doesn't have any special ability but has 20 health points. Spawns the least frequent.<br>
 If this enemy gets past you, you lose 1 health point.
 ### :arrow_forward: Game Lost
-If you lose the game you can start over or quit. There will be two buttons on the screen, :black_square_button: **RETRY** and :black_square_button: **QUIT**, and a message reading :closed_book: **You lost! Retry?**.
+If you lose the game you can start over or quit. There will be two buttons on the screen, :black_square_button: **RETRY** and :black_square_button: **QUIT**, and a message displayed reading :closed_book: **You lost! Retry?**.
 ## :copyright: License
 Distributed under the MIT License. See LICENSE.txt for more information.
 ## :id: Contact

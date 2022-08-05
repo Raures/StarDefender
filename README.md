@@ -44,7 +44,7 @@ If this enemy gets past you, you lose 1 health point.<br>
 #### :arrow_forward: Game Lost
 If you lose the game you can start over or quit. There will be two buttons on the screen, :black_square_button: **RETRY** and :black_square_button: **QUIT**, and a message displayed reading :closed_book: **You lost! Retry?**.
 ## :copyright: License
-Distributed under the MIT License. See LICENSE.txt for more information.
+Distributed under the MIT License. See LICENSE for more information.
 ## :id: Contact
 Rareș Munteanu - raures778@gmail.com<br>
 GitHub - https://github.com/Raures/

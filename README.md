@@ -17,7 +17,7 @@ python main.py
 ```
 :small_red_triangle_down: *Make sure you open the terminal in the folder containing main.py!*
 ## :video_game: The Game
-The game only ends when you quit it (obvious one) or when three enemies managed to get past you.
+The game only ends when you quit it (obvious one) or when three enemies manage to get past you.
 #### :arrow_forward: How To Play
 The game starts directly into action, you can move the player using the mouse cursor (only horizontally) and shoot using the left mouse button.
 Pressing Escape will pause the game.<br><br>

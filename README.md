@@ -29,7 +29,7 @@ The amount of health points left are displayed in the bottom right side of the s
 The score is displayed in the bottom left side of the screen.
 The ammo is unlimited and there's no reload time.
 #### :arrow_forward: Enemy Types
-1. **Beetle**.<br>
+1. **Beetle**.
 Regular enemy. Has one health point and doesn't do anything special. Spawns frequently.<br>
 If this enemy gets past you, you lose 1 health point.<br>
 <img src="https://github.com/Raures/StarDefender/blob/master/imgs/Beetle.png" width="35" height="25"/><br>

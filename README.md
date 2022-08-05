@@ -66,4 +66,4 @@ https://mixkit.co/free-sound-effects/pop/
 https://www.fesliyanstudios.com/royalty-free-music/download/land-of-8-bits/288
 ```
 <br>
-<p align="center"><img src="https://m.media-amazon.com/images/I/61qMs5Rq2nL._AC_SL1000_.jpg" width="400" height="400"/></p>
+<p align="center"><img src="https://github.com/Raures/StarDefender/blob/master/imgs/0cb42d7c7f68fed8519555dd846b307b.jpg" width="400" height="400"/></p>

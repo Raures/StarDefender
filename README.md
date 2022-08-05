@@ -17,26 +17,30 @@ python main.py
 :small_red_triangle_down: *Make sure you open the terminal in the folder containing main.py!*
 ## :video_game: The Game
 The game only ends when you quit it (obvious one) or when three enemies managed to get past you.
-### :arrow_forward: How To Play
+#### :arrow_forward: How To Play
 The game starts directly into action, you can move the player using the mouse cursor (only horizontally) and shoot using the left mouse button.
-Pressing Escape will pause the game.
-### :arrow_forward: Losing The Game
+Pressing Escape will pause the game.<br>
+<img src="https://github.com/Raures/StarDefender/blob/master/imgs/Defender.png" width="45" height="45"/><br>
+#### :arrow_forward: Losing The Game
 Enemies are spawned from the top of the screen and keep moving towards the bottom of the screen.
 You start with three health points, if three enemies manage to get past you, you lose the game! :skull:<br>
 The amount of health points left are displayed in the bottom right side of the screen.
 The score is displayed in the bottom left side of the screen.
 The ammo is unlimited and there's no reload time.
-### :arrow_forward: Enemy Types
-* **Beetle**.
+#### :arrow_forward: Enemy Types
+* **Beetle**.<br>
 Regular enemy. Has one health point and doesn't do anything special. Spawns frequently.<br>
-If this enemy gets past you, you lose 1 health point.
+If this enemy gets past you, you lose 1 health point.<br>
+<img src="https://github.com/Raures/StarDefender/blob/master/imgs/Beetle.png" width="35" height="25"/><br>
 * **Wasp**.
 This enemy is wider and can randomly change its position. Has three health points. Spawns less frequently.<br>
-If this enemy gets past you, you lose 1 health point.
+If this enemy gets past you, you lose 1 health point.<br>
+<img src="https://github.com/Raures/StarDefender/blob/master/imgs/Wasp.png" width="85" height="25"/><br>
 * **Queen**.
 This is a large enemy, has a bigger hitbox, doesn't have any special ability but has 20 health points. Spawns the least frequent.<br>
-If this enemy gets past you, you lose 1 health point.
-### :arrow_forward: Game Lost
+If this enemy gets past you, you lose 1 health point.<br>
+<img src="https://github.com/Raures/StarDefender/blob/master/imgs/Queen.png" width="310" height="175"/><br>
+#### :arrow_forward: Game Lost
 If you lose the game you can start over or quit. There will be two buttons on the screen, :black_square_button: **RETRY** and :black_square_button: **QUIT**, and a message displayed reading :closed_book: **You lost! Retry?**.
 ## :copyright: License
 Distributed under the MIT License. See LICENSE.txt for more information.

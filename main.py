@@ -120,11 +120,13 @@ def spawner() -> None:
             if enemies["last_spawned"][c] == 0:  # check if it's the first spawn
                 # Add a new enemy to the enemy_sprite_group with a random x position
                 enemy_sprite_group.add(enemies["enemy"][c](random.randint(25, SCREEN_HEIGHT - 25), scene_distance))
+                print("Spawned the first {}!".format(enemies["enemy"][c].__name__))
                 enemies["last_spawned"][c] = time_now  # set the time when the last enemy of that type was spawned
             # Check if the necessary amount of time has passed since the last spawn
             elif time_now - enemies["last_spawned"][c] > enemies["frequency"][c]:
                 # Add a new enemy to the enemy_sprite_group with a random x position
                 enemy_sprite_group.add(enemies["enemy"][c](random.randint(25, SCREEN_HEIGHT - 25), scene_distance))
+                print("Spawned another {}.".format(enemies["enemy"][c].__name__))
                 enemies["last_spawned"][c] = time_now # set the time when the last enemy of that type was spawned
 
 

@@ -19,7 +19,7 @@ python main.py
 The game only ends when you quit it (obvious one) or when three enemies managed to get past you.
 #### :arrow_forward: How To Play
 The game starts directly into action, you can move the player using the mouse cursor (only horizontally) and shoot using the left mouse button.
-Pressing Escape will pause the game.<br>
+Pressing Escape will pause the game.<br><br>
 <img src="https://github.com/Raures/StarDefender/blob/master/imgs/Defender.png" width="45" height="45"/><br>
 #### :arrow_forward: Losing The Game
 Enemies are spawned from the top of the screen and keep moving towards the bottom of the screen.

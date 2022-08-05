@@ -1,3 +1,4 @@
+# :rocket: Star Defender<br><br>
 ### :hammer: Built With
 Libraries used to create this program.<br>
 * <a href="https://www.pygame.org/download.shtml">pygame</a>
@@ -43,11 +44,20 @@ Distributed under the MIT License. See LICENSE.txt for more information.
 Rareș Munteanu - raures778@gmail.com<br>
 GitHub - https://github.com/Raures/
 ## :deciduous_tree: Resources
-The spaceship and enemies have been created using this amazing **FREE** and **ONLINE** generator
+:one: The spaceship and enemies have been created using this amazing **FREE** and **ONLINE** generator
 ```sh
 https://deep-fold.itch.io/spaceship-generator
 ```
-The background has been created using another amazing **FREE** and **ONLINE** generator
+:two: The background has been created using another amazing **FREE** and **ONLINE** generator
 ```sh
 https://deep-fold.itch.io/space-background-generator
+```
+:three: The bullet sprite was borrowed from a spaceship sprites pack
+```sh
+https://craftpix.net/freebies/free-pixel-art-enemy-spaceship-2d-sprites/
+```
+:four: The sounds and the music are from
+```sh
+https://mixkit.co/free-sound-effects/pop/
+https://www.fesliyanstudios.com/royalty-free-music/download/land-of-8-bits/288
 ```
